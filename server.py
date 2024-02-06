@@ -12,7 +12,7 @@ def health_check():
 
 if (weatherEndpointActive):
     @app.route('/weather', methods=['GET'])
-        def health_check():
+        def weather_check():
             # here we should can a weather API to retrieve the weather of a city
             # and return the weather to the client
             # this is a fake example 👇
