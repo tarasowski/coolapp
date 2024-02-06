@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 # a simple feature flag example
-weatherEndpointActive = False
+weatherEndpointActive = True
 
 @app.route('/health', methods=['GET'])
 def health_check():
