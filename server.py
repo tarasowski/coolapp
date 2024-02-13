@@ -3,6 +3,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 # a simple feature flag example
 weatherEndpointActive = False
+print("shouldn't run in my pipeline")
 
 @app.route('/health', methods=['GET'])
 def health_check():
